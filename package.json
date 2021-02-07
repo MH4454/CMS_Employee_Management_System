@@ -1,0 +1,29 @@
+{
+  "name": "CMS_Employee_Management_System",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MH4454/CMS_Employee_Management_System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MH4454/CMS_Employee_Management_System/issues"
+  },
+  "homepage": "https://github.com/MH4454/CMS_Employee_Management_System#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
+}
