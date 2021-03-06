@@ -1,27 +1,26 @@
 const inquirer = require("inquirer");
-const mysql = require("mysql");
 const connection = require("./lib/connection");
+
 const {
     viewRoles,
     viewAllEmployees,
     viewAllEmployeesByManager,
     viewAllDepartments,
     viewDepartmentBudget
-} = require("./lib/CMS-queries/view-queries");
+} = require("./lib/CMS_queries/view-queries");
 const {
-    updateEmployeeRole,
-    updateEmployeeManager
-} = require("./lib/CMS-queries/update-queries");
+    updateEmployeeRole
+} = require("./lib/CMS_queries/update-queries");
 const {
     removeEmployee,
     removeRole,
     removeDepartment
-} = require("./lib/CMS-queries/remove-queries");
+} = require("./lib/CMS_queries/remove-queries");
 const {
     addEmployee,
     addRole,
     addDepartment
-} = require("./lib/CMS-queries/add-queries")
+} = require("./lib/CMS_queries/add-queries")
 
 start()
 
@@ -59,8 +58,6 @@ function start(){
             viewDepartmentBudget();
         } else if (response.mainMenu === "Update Employee Role") {
             updateEmployeeRole();
-        } else if (response.mainMenu === "Update Employee Manager") {
-            updateEmployeeManager();
         } else if (response.mainMenu === "Add Employee") {
             addEmployee();
         } else if (response.mainMenu === "Remove Employee") {
